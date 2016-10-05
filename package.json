@@ -1,0 +1,22 @@
+{
+  "name": "@ufotsuboi/react-string2tag",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ufotsuboi/react-string2tag.git"
+  },
+  "keywords": [
+    "reatcjs"
+  ],
+  "author": "ufotsuboi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ufotsuboi/react-string2tag/issues"
+  },
+  "homepage": "https://github.com/ufotsuboi/react-string2tag#readme"
+}
