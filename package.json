@@ -1,6 +1,6 @@
 {
   "name": "@ufotsuboi/react-string2tag",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "To replace 'http://~' and '\n' in the string to each tags for React.js",
   "main": "index.js",
   "scripts": {
