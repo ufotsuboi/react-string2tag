@@ -1,10 +1,10 @@
 {
   "name": "@ufotsuboi/react-string2tag",
   "version": "0.0.1",
-  "description": "",
+  "description": "To replace 'http://~' and '\n' in the string to each tags for React.js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --require intelli-espower-loader --reporter spec test/**/*.spec.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,13 @@
   "bugs": {
     "url": "https://github.com/ufotsuboi/react-string2tag/issues"
   },
-  "homepage": "https://github.com/ufotsuboi/react-string2tag#readme"
+  "homepage": "https://github.com/ufotsuboi/react-string2tag#readme",
+  "dependencies": {
+    "react": "^15.3.2"
+  },
+  "devDependencies": {
+    "intelli-espower-loader": "^1.0.1",
+    "mocha": "^3.1.0",
+    "power-assert": "^1.4.1"
+  }
 }
