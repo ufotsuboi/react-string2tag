@@ -1,6 +1,5 @@
 const assert = require('power-assert');
-
-const string2tag = require('../index');
+const string2tag = require('../src/string2tag').default;
 
 describe('react-string2tag', () => {
   describe('replace to newline', () => {

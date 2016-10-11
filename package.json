@@ -1,10 +1,13 @@
 {
   "name": "@ufotsuboi/react-string2tag",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "To replace 'http://~' and '\n' in the string to each tags for React.js",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require intelli-espower-loader --reporter spec test/**/*.spec.js"
+    "clean": "rimraf lib",
+    "babel": "babel src --out-dir lib",
+    "build": "npm-run-all -s clean babel",
+    "test": "mocha --compilers js:babel-register --require intelli-espower-loader --reporter spec test/**/*.spec.js"
   },
   "repository": {
     "type": "git",
@@ -15,6 +18,12 @@
   ],
   "author": "ufotsuboi",
   "license": "ISC",
+  "files": [
+    "package.json",
+    "README.md",
+    "index.js",
+    "lib"
+  ],
   "bugs": {
     "url": "https://github.com/ufotsuboi/react-string2tag/issues"
   },
@@ -23,8 +32,14 @@
     "react": "^15.3.2"
   },
   "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-register": "^6.16.3",
     "intelli-espower-loader": "^1.0.1",
     "mocha": "^3.1.0",
-    "power-assert": "^1.4.1"
+    "npm-run-all": "^3.1.0",
+    "power-assert": "^1.4.1",
+    "rimraf": "^2.5.4"
   }
 }
