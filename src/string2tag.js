@@ -5,6 +5,7 @@ const DEFAULT_OPTIONS = {
     targetBlank: true,
     ellipsis: false,
     className: '',
+    style: {},
   },
 };
 
@@ -16,6 +17,7 @@ const createLinkElement = (to, key, options) => {
     href: to,
     key,
     className: opt.className,
+    style: opt.style,
   };
 
   if (opt.targetBlank) {

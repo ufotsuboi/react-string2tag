@@ -60,5 +60,16 @@ describe('react-string2tag', () => {
       assert(result[2].props.className === className);
       done();
     });
+
+    it('add style', done => {
+      const url = 'https://901234567890'
+      const string = `foobar\n${url}\nfuga`;
+      const style = { color: '#eee' };
+      const result = string2tag(string, { link: { style: style } });
+
+      assert(result[2].type === 'a');
+      assert(result[2].props.style.color === style.color);
+      done();
+    });
   });
 });

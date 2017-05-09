@@ -1,6 +1,6 @@
 {
   "name": "@ufotsuboi/react-string2tag",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "To replace 'http://~' and '\n' in the string to each tags for React.js",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/ufotsuboi/react-string2tag#readme",
   "dependencies": {
-    "react": "^15.3.2"
+    "react": "^15.5.4"
   },
   "devDependencies": {
     "babel-cli": "^6.16.0",
