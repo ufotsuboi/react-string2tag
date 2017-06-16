@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/ufotsuboi/react-string2tag#readme",
   "dependencies": {
+    "object-assign": "^4.1.1",
     "react": "^15.5.4"
   },
   "devDependencies": {

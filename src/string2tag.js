@@ -1,4 +1,5 @@
 import React from 'react';
+import assign from 'object-assign';
 
 const DEFAULT_OPTIONS = {
   link: {
@@ -10,7 +11,7 @@ const DEFAULT_OPTIONS = {
 };
 
 const createLinkElement = (to, key, options) => {
-  const opt = Object.assign({}, DEFAULT_OPTIONS.link, options);
+  const opt = assign({}, DEFAULT_OPTIONS.link, options);
   const text = (opt.ellipsis && opt.ellipsis < to.length) ? `${to.substr(0, opt.ellipsis)}...` : to;
 
   const attributes = {
